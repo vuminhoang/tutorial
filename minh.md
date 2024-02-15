@@ -1,1 +1,1 @@
-Minh
+My name is Minh, now I'm a senior student at Hanoi University of Science, majoring in Data Science. During my academic journey, I have accumulated a lot of knowledge in the field Data and AI. In the future, I'd like to become an AI Engineer. 
