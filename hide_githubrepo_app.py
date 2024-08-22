@@ -3,8 +3,8 @@ import streamlit as st
 def hide_github_icon():
     hide_github_style = """
         <style>
-        .stApp header .decoration {
-            display: none;
+        a[href*="github.com"] {
+            display: none !important;
         }
         </style>
     """
