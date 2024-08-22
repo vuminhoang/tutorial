@@ -3,7 +3,7 @@ import streamlit as st
 def hide_github_icon():
     hide_github_style = """
         <style>
-        a[href*="github.com"] {
+        .viewerBadge_container__1QSob {
             display: none !important;
         }
         </style>
