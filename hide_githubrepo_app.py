@@ -1,19 +1,19 @@
 import streamlit as st
 
-def hide_github_and_footer():
+def hide_elements():
     hide_elements_style = """
     <style>
     /* Hide the GitHub icon */
-    .viewerBadge_container__1QSob { 
-        display: none !important; 
-    } 
-    /* Hide the footer */
-    footer { 
-        visibility: hidden; 
-    } 
+    .viewerBadge_container__1QSob {
+        display: none !important;
+    }
     /* Hide the header */
-    header { 
-        visibility: hidden; 
+    header {
+        visibility: hidden !important;
+    }
+    /* Hide the footer */
+    footer {
+        visibility: hidden !important;
     }
     </style>
     """
@@ -21,21 +21,10 @@ def hide_github_and_footer():
 
 def main():
     st.title("My Simple Streamlit App")
-    st.write("This app hides the GitHub icon, header, and footer but keeps the settings menu visible.")
+    st.write("This app hides the GitHub icon, header, and footer while keeping the settings menu visible.")
 
-    # Call the function to hide specific elements
-    hide_github_and_footer()
-
-if __name__ == "__main__":
-    main()
-
-
-def main():
-    st.title("My Simple Streamlit App")
-    st.write("This is a simple app with the GitHub icon, header, and footer hidden.")
-
-    # Hide specific elements while keeping the settings menu
-    hide_specific_elements()
+    # Hide the specific elements
+    hide_elements()
 
 if __name__ == "__main__":
     main()
