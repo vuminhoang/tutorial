@@ -1,14 +1,11 @@
 import streamlit as st
 
-def hide_streamlit_elements():
+def hide_specific_elements():
     hide_elements_style = """
     <style>
     .viewerBadge_container__1QSob, .styles_viewerBadge__1yB5_, 
     .viewerBadge_link__1S137, .viewerBadge_text__1JaDK { 
         display: none !important; 
-    } 
-    #MainMenu { 
-        visibility: hidden; 
     } 
     footer { 
         visibility: hidden; 
@@ -22,10 +19,10 @@ def hide_streamlit_elements():
 
 def main():
     st.title("My Simple Streamlit App")
-    st.write("This is a simple app with custom UI elements hidden.")
+    st.write("This is a simple app with the GitHub icon, header, and footer hidden.")
 
-    # Hide specific Streamlit elements
-    hide_streamlit_elements()
+    # Hide specific elements while keeping the settings menu
+    hide_specific_elements()
 
 if __name__ == "__main__":
     main()
